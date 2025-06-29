@@ -12,7 +12,7 @@ function createQuizForm() {
   const questionBlocks = text.match(/\d+\..*?(?:Answer:\s*[ABCD])/gs);
 
   if (!questionBlocks) {
-    Logger.log("❌ No questions found.");
+    Logger.log("No questions found.");
     return;
   }
 
@@ -39,7 +39,7 @@ function createQuizForm() {
     }
   }
 
-  Logger.log("✅ Form created: " + form.getEditUrl());
+  Logger.log("Form created: " + form.getEditUrl());
 }
 
 
